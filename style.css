@@ -1,7 +1,11 @@
 body {
   font: 14px Helvetica Neue;
   text-rendering: optimizeLegibility;
-  margin-top: 1em;
+}
+
+.light, .foot, h1 {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica;
+  font-weight: 300;
 }
 
 a {
@@ -13,12 +17,17 @@ a:hover {
   text-decoration: underline;
 }
 
-.body {
+.body, .foot {
   width: 960px;
   margin: auto;
 }
 
+
+.foot {
+  display: block;
+  margin-top: 3em;
+}
+
 h1 {
   font-size: 36px;
-  font-weight: 300;
 }

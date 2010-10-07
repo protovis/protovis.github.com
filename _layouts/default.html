@@ -5,13 +5,20 @@
     <title>Protovis{% if page.title %} - {{ page.title }}{% endif %}</title>
     <style type="text/css">
 
-@import url("/style.css?0.0.0");
+@import url("style.css?0.0.0");
+@import url("syntax.css?0.0.0");
 
     </style>
   </head>
   <body>
     <div class="body">
-      {{ content }}
+
+{{ content }}
+
+    </div>
+    <div class="foot">
+      Copyright &copy; 2010
+      <a href="http://vis.stanford.edu/">Stanford Visualization Group</a>
     </div>
   </body>
 </html>

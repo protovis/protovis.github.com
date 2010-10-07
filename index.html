@@ -3,5 +3,26 @@ layout: default
 ---
 <h1><a href="http://protovis.org/">Protovis</a></h1>
 
-Protovis is in the processing of transitioning to GitHub pages. In the meantime,
+{% highlight js linenos %}
+var vis = new pv.Panel()
+    .width(150)
+    .height(150);
+
+vis.add(pv.Rule)
+    .data(pv.range(0, 2, .5))
+    .bottom(function(d) d * 80 + .5)
+  .add(pv.Label);
+
+vis.add(pv.Bar)
+    .data([1, 1.2, 1.7, 1.5, .7])
+    .width(20)
+    .height(function(d) d * 80)
+    .bottom(0)
+    .left(function() this.index * 25 + 25)
+  .anchor("bottom").add(pv.Label);
+
+vis.render();
+{% endhighlight %}
+
+Protovis is in the processing of transitioning to GitHub. In the meantime,
 please visit our existing site, <a href="http://protovis.org/">protovis.org</a>.
